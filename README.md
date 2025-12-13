@@ -89,12 +89,11 @@ A full SaaS ecosystem including:
 
 ---
 
-## 💬 **Let’s Connect**
+## 💬 Let’s Connect
 
 - 💼 LinkedIn: https://www.linkedin.com/in/lukas-glowacz/  
-- ✨ Linktree (all projects): https://linktr.ee/luckaglowacz  
-- ✉️ Email: **bakatjur@gmail.com**  
-
+- 🌐 Portfolio: https://lukaszglowacz.com 
+- ✉️ Email: **contact@lukaszglowacz.com**
 
 ---
 
