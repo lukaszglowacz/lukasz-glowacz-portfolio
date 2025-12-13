@@ -33,7 +33,7 @@ const projects = [
       tech: ["Python", "Google Sheets API", "Heroku", "Google Cloud"],
       highlights:
         "CLI UX · 15 expense categories · Google Sheets as a live data backend",
-      liveUrl: "https://personal-expense-tracker-2e927bc5881b.herokuapp.com/", // add live URL here if you have one deployed
+      liveUrl: "https://personal-expense-tracker-2e927bc5881b.herokuapp.com/",
       codeUrl: "https://github.com/lukaszglowacz/personal-expense-tracker"
     },
     {
