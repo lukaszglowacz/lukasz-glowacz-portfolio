@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>Łukasz Głowacz — Software Developer</title>
-    <meta name="title" content="Łukasz Głowacz — Software Developer" />
+    <title>Łukasz Głowacz — Full Stack Developer</title>
+    <meta name="title" content="Łukasz Głowacz — Full Stack Developer" />
     <meta
       name="description"
-      content="Portfolio of Łukasz Głowacz — Full-Stack Software Developer (Python, Django REST, React, TypeScript)."
+      content="Portfolio of Łukasz Głowacz — Full Stack Developer specializing in Python (FastAPI), React 18, and modern web applications. Currently Full Stack Developer at Playmaker.pro."
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lukaszglowacz.com/" />
-    <meta property="og:title" content="Łukasz Głowacz — Software Developer" />
+    <meta property="og:title" content="Łukasz Głowacz — Full Stack Developer" />
     <meta
       property="og:description"
-      content="Full-Stack Developer building modern, high-performing applications. Python · Django REST · React · TypeScript"
+      content="Full Stack Developer building production-ready applications. Python · FastAPI · React 18 · TypeScript"
     />
     <meta
       property="og:image"
@@ -29,11 +29,11 @@
     <meta property="twitter:url" content="https://lukaszglowacz.com/" />
     <meta
       property="twitter:title"
-      content="Łukasz Głowacz — Software Developer"
+      content="Łukasz Głowacz — Full Stack Developer"
     />
     <meta
       property="twitter:description"
-      content="Full-Stack Developer building modern, high-performing applications."
+      content="Full Stack Developer building production-ready applications."
     />
     <meta
       property="twitter:image"
@@ -59,29 +59,35 @@
     />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-content">
         <div>
-          <p class="eyebrow">Software Developer · Full-Stack</p>
+          <p class="eyebrow">Full Stack Developer</p>
           <h1 class="site-title">Łukasz Głowacz</h1>
+          <p class="current-position">
+            Currently: <strong>Full Stack Developer</strong> at <strong>Playmaker.pro</strong>
+          </p>
           <p class="site-subtitle">
-            I design and build production-ready web applications end-to-end –
-            from backend APIs and data models to frontend UX and deployments in
-            the cloud.
+            I build production-ready web applications from backend APIs and data models 
+            to frontend UX and cloud deployments. Specializing in Python (FastAPI), 
+            React 18, and modern full-stack architecture.
           </p>
           <div class="header-actions">
-            <a href="#projects" class="btn primary">View selected projects</a>
-            <a href="#skills" class="btn ghost">View technical skills</a>
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#skills" class="btn ghost">Technical Skills</a>
           </div>
         </div>
         <div class="header-meta">
-          <p class="meta-line">Location: Stockholm / Warsaw</p>
-          <p class="meta-line">Focus: Backend-leaning full-stack</p>
+          <p class="meta-line"><i class="bi bi-geo-alt-fill"></i> Stockholm / Warsaw</p>
+          <p class="meta-line"><i class="bi bi-briefcase-fill"></i> Available for B2B contracts</p>
           <p class="meta-line">
-            Tech: Python · Django REST · React · TypeScript
+            <i class="bi bi-tools"></i> Python · FastAPI · React 18 · TypeScript
           </p>
         </div>
       </div>
@@ -91,11 +97,11 @@
       <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
-          <h2 class="section-title">Selected Projects</h2>
+          <h2 class="section-title">Featured Projects</h2>
           <p class="section-intro">
-            A curated set of projects that best represent how I think about
-            software: real user problems, clear system design, robust backend
-            architecture and pragmatic, user-friendly interfaces.
+            Real-world applications that demonstrate full-stack capabilities: 
+            robust backend architecture, clean frontend interfaces, and 
+            production-ready code with comprehensive testing.
           </p>
 
           <div id="projects-grid" class="projects-grid">
@@ -107,49 +113,49 @@
       <!-- Skills -->
       <section id="skills" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">Technical Profile</h2>
+          <h2 class="section-title">Technical Skills</h2>
           <p class="section-intro">
-            I work across the stack, but I’m especially strong on the backend
-            side: API design, data modelling, authentication, subscriptions and
-            integrations.
+            Full-stack developer with strong backend expertise. I work across 
+            the entire development stack with focus on API design, system 
+            architecture, and building reliable, maintainable applications.
           </p>
 
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>Backend</h3>
+              <h3>Backend Development</h3>
               <ul class="skill-list">
-                <li><strong>Python · Django · Django REST Framework</strong></li>
-                <li><strong>API design & domain logic</strong> (REST, business rules, validation)</li>
-                <li><strong>Authentication & authorization</strong> (JWT, role-based access)</li>
-                <li><strong>Geolocation systems</strong> (distance checks, radius enforcement)</li>
-                <li><strong>SaaS billing</strong> (Stripe subscriptions, seat-based pricing, webhooks)</li>
-                <li><strong>Data & reporting</strong> (PostgreSQL, PDF reports, summaries)</li>
-                <li><strong>Production readiness</strong> (error handling, performance, correctness)</li>
-              </ul>
-            </article>
-            
-
-            <article class="skill-card">
-              <h3>Frontend</h3>
-              <ul class="skill-list">
-                <li><strong>React · TypeScript · Vite</strong></li>
-                <li><strong>Auth-aware UI</strong> (protected routes, token refresh)</li>
-                <li><strong>Async data flows</strong> (polling, live timers, dashboards)</li>
-                <li><strong>State management</strong> (Context, custom hooks)</li>
-                <li><strong>UX & reliability</strong> (error states, loading states)</li>
-                <li><strong>Responsive layouts</strong> (mobile-first dashboards)</li>
+                <li><strong>Python · FastAPI · Django REST Framework</strong></li>
+                <li><strong>RESTful API design</strong> (OpenAPI, validation, error handling)</li>
+                <li><strong>Real-time systems</strong> (WebSocket, async programming)</li>
+                <li><strong>Testing & quality</strong> (Pytest, 69% test coverage achieved)</li>
+                <li><strong>Authentication</strong> (JWT, role-based access control)</li>
+                <li><strong>Database design</strong> (PostgreSQL, SQLAlchemy ORM)</li>
+                <li><strong>Integrations</strong> (Stripe, external APIs, webhooks)</li>
               </ul>
             </article>
 
             <article class="skill-card">
-              <h3>DevOps & Integrations</h3>
+              <h3>Frontend Development</h3>
               <ul class="skill-list">
-                <li><strong>Docker & cloud deployments</strong> (Heroku, DigitalOcean)</li>
-                <li><strong>Environment-based configuration</strong> (secrets, env vars)</li>
-                <li><strong>CI/CD basics</strong> (build & deploy pipelines)</li>
-                <li><strong>Payments & automation</strong> (Stripe, Klaviyo)</li>
-                <li><strong>External APIs</strong> (Google Maps, Google Sheets)</li>
-                <li><strong>Media & storage</strong> (Cloudinary, object storage)</li>
+                <li><strong>React 18 · TypeScript · JavaScript (ES6+)</strong></li>
+                <li><strong>Modern tooling</strong> (Vite, npm, development workflows)</li>
+                <li><strong>State management</strong> (Zustand, Context API, custom hooks)</li>
+                <li><strong>UI libraries</strong> (Material-UI, responsive design)</li>
+                <li><strong>Testing</strong> (Vitest, React Testing Library)</li>
+                <li><strong>Real-time features</strong> (WebSocket integration, live updates)</li>
+                <li><strong>UX focus</strong> (loading states, error handling, accessibility)</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>DevOps & Tools</h3>
+              <ul class="skill-list">
+                <li><strong>Version control</strong> (Git, GitHub, collaborative workflows)</li>
+                <li><strong>Containerization</strong> (Docker, Docker Compose basics)</li>
+                <li><strong>CI/CD</strong> (GitHub Actions, automated testing)</li>
+                <li><strong>Cloud platforms</strong> (Heroku, DigitalOcean)</li>
+                <li><strong>Development tools</strong> (VS Code, debugging, profiling)</li>
+                <li><strong>External services</strong> (Cloudinary, Google APIs, Klaviyo)</li>
               </ul>
             </article>
           </div>
@@ -162,12 +168,13 @@
         <div>
           <p class="footer-name">Łukasz Głowacz</p>
           <p class="footer-tagline">
-            Building reliable, product-driven web applications.
+            Full Stack Developer · Python · React · Available for B2B contracts
           </p>
         </div>
         <div class="footer-links">
-          <!-- Update these links to your real profiles -->
           <a href="mailto:contact@lukaszglowacz.com">Email</a>
+          <a href="tel:+46790332262">+46 790 332 262</a>
+          <a href="tel:+48690250957">+48 690 250 957</a>
           <a
             href="https://github.com/lukaszglowacz"
             target="_blank"
@@ -181,11 +188,11 @@
             >LinkedIn</a
           >
           <a
-            href="assets/lukasz-glowacz-software-developer.pdf"
+            href="assets/lukasz-glowacz-full-stack.pdf"
             class="btn primary"
             download
           >
-            Download CV (PDF)
+            Download CV
           </a>
         </div>
       </div>
