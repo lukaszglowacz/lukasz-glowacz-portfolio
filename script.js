@@ -26,17 +26,27 @@ const projects = [
     name: "Playmaker.pro",
     role: "Full Stack Developer (Current Position)",
     description:
-      "Sports management platform enabling coaches and teams to organize training sessions, manage player attendance, and coordinate team activities. Working on backend API development with FastAPI and React 18 frontend implementation.",
+      "Enterprise sports management platform serving thousands of athletes, clubs, and officials. Building production features including transfer marketplace, payment integrations (Tpay), real-time notifications, and social features. Working with multi-database architecture (PostgreSQL, MongoDB, Redis) and distributed task processing with Celery.",
     tech: [
-      "FastAPI",
+      "Next.js 14",
       "React 18",
-      "PostgreSQL",
+      "Django 3.2",
+      "Django REST Framework",
       "TypeScript",
-      "REST API",
-      "Production deployment"
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Celery",
+      "Tailwind CSS",
+      "React Query",
+      "Zustand",
+      "NextAuth.js",
+      "Docker Compose",
+      "Ansible",
+      "GitHub Actions"
     ],
     highlights:
-      "Production system · Team collaboration · Modern full-stack architecture",
+      "Production system · 70%+ test coverage · Multi-database architecture · Real-time features · Payment integration",
     liveUrl: "https://playmaker.pro",
     current: true
   },
@@ -71,7 +81,6 @@ const projects = [
     tech: ["Python", "Google Sheets API", "Heroku", "Google Cloud"],
     highlights:
       "CLI interface · 15 expense categories · Google Sheets integration · Cloud deployment",
-    liveUrl: "https://personal-expense-tracker-2e927bc5881b.herokuapp.com/",
     codeUrl: "https://github.com/lukaszglowacz/personal-expense-tracker"
   },
   {
@@ -82,8 +91,6 @@ const projects = [
     tech: ["Django", "PostgreSQL", "Cloudinary", "Bootstrap", "Heroku"],
     highlights:
       "User accounts · Social features · Rich media · Responsive design",
-    liveUrl:
-      "https://norton-innovation-platform-89592d9b2194.herokuapp.com/",
     codeUrl: "https://github.com/lukaszglowacz/norton-innovation-platform"
   }
 ];
