@@ -93,3 +93,14 @@ if (projectsGrid) {
     projectsGrid.appendChild(card);
   });
 }
+
+// ===== Theme toggle =====
+const themeToggle = document.getElementById('theme-toggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+}
