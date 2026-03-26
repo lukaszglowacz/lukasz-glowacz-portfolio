@@ -3,201 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>Łukasz Głowacz — Full Stack Developer</title>
-    <meta name="title" content="Łukasz Głowacz — Full Stack Developer" />
-    <meta
-      name="description"
-      content="Portfolio of Łukasz Głowacz — Full Stack Developer specializing in Next.js 14, Django REST Framework, React 18, and enterprise web applications. Currently Full Stack Developer at Playmaker.pro."
-    />
-
-    <!-- Open Graph / Facebook -->
+    <title>Łukasz Głowacz — Frontend Developer</title>
+    <meta name="title" content="Łukasz Głowacz — Frontend Developer" />
+    <meta name="description" content="Frontend Developer specializing in Next.js 14, React 18, TypeScript. Currently building Playmaker.pro — enterprise sports platform. Available for remote B2B contracts." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lukaszglowacz.com/" />
-    <meta property="og:title" content="Łukasz Głowacz — Full Stack Developer" />
-    <meta
-      property="og:description"
-      content="Full Stack Developer building enterprise applications. Next.js 14 · Django REST Framework · React 18 · TypeScript"
-    />
-    <meta
-      property="og:image"
-      content="https://lukaszglowacz.com/assets/og-image.png"
-    />
-
-    <!-- Twitter -->
+    <meta property="og:title" content="Łukasz Głowacz — Frontend Developer" />
+    <meta property="og:description" content="Frontend Developer · Next.js · React · TypeScript · Remote B2B Contracts" />
+    <meta property="og:image" content="https://lukaszglowacz.com/assets/og-image.png" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://lukaszglowacz.com/" />
-    <meta
-      property="twitter:title"
-      content="Łukasz Głowacz — Full Stack Developer"
-    />
-    <meta
-      property="twitter:description"
-      content="Full Stack Developer building production-ready applications."
-    />
-    <meta
-      property="twitter:image"
-      content="https://lukaszglowacz.com/assets/og-image.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon-16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/apple-touch-icon.png"
-    />
+    <meta property="twitter:title" content="Łukasz Głowacz — Frontend Developer" />
+    <meta property="twitter:description" content="Frontend Developer · Next.js · React · TypeScript · Remote B2B Contracts" />
+    <meta property="twitter:image" content="https://lukaszglowacz.com/assets/og-image.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
-    <!-- Bootstrap Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <header class="site-header">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
       <div class="container header-content">
-        <div>
-          <p class="eyebrow">Full Stack Developer</p>
-          <h1 class="site-title">Łukasz Głowacz</h1>
-          <p class="current-position">
-            Currently: <strong>Full Stack Developer</strong> at <strong>Playmaker.pro</strong>
+        <div class="hero-main">
+          <p class="eyebrow">
+            <span class="dot-live"></span>
+            Available for remote B2B contracts
           </p>
+          <h1 class="site-title">Łukasz<br>Głowacz</h1>
+          <p class="hero-role">Frontend Developer</p>
           <p class="site-subtitle">
-            I build enterprise-grade web applications with modern full-stack technologies. 
-            Specializing in Next.js 14, Django REST Framework, React 18, and scalable 
-            multi-database architectures with PostgreSQL, MongoDB, and Redis.
+            Building production interfaces for enterprise platforms.
+            Currently at <strong>Playmaker.pro</strong> — sports management
+            platform serving thousands of users across Poland.
           </p>
           <div class="header-actions">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#skills" class="btn ghost">Technical Skills</a>
+            <a href="#work" class="btn primary">Featured work</a>
+            <a href="assets/lukasz-glowacz-software-developer.pdf" class="btn ghost" download>
+              <i class="bi bi-download"></i> Download CV
+            </a>
           </div>
         </div>
-        <div class="header-meta">
-          <p class="meta-line"><i class="bi bi-geo-alt-fill"></i> Stockholm / Warsaw</p>
-          <p class="meta-line"><i class="bi bi-briefcase-fill"></i> Available for B2B contracts</p>
-          <p class="meta-line">
-            <i class="bi bi-tools"></i> Next.js 14 · Django · React 18 · TypeScript · PostgreSQL
-          </p>
+
+        <div class="hero-side">
+          <div class="stack-card">
+            <p class="stack-label">Core stack</p>
+            <div class="stack-items">
+              <span class="stack-item si-blue">Next.js 14</span>
+              <span class="stack-item si-blue">React 18</span>
+              <span class="stack-item si-blue">TypeScript</span>
+              <span class="stack-item si-indigo">Tailwind CSS</span>
+              <span class="stack-item si-indigo">React Query</span>
+              <span class="stack-item si-indigo">Zustand</span>
+              <span class="stack-item si-indigo">NextAuth.js</span>
+              <span class="stack-item si-purple">Django REST</span>
+              <span class="stack-item si-purple">PostgreSQL</span>
+              <span class="stack-item si-purple">Python</span>
+            </div>
+            <div class="stack-meta">
+              <span><i class="bi bi-geo-alt"></i> Stockholm / Warsaw</span>
+              <span><i class="bi bi-globe2"></i> Remote only</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- Projects -->
-      <section id="projects" class="section">
-        <div class="container">
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-intro">
-            Real-world applications that demonstrate full-stack capabilities: 
-            robust backend architecture, clean frontend interfaces, and 
-            production-ready code with comprehensive testing.
-          </p>
 
-          <div id="projects-grid" class="projects-grid">
-            <!-- Filled by script.js -->
+      <section class="section section-highlights">
+        <div class="container">
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-pentagon"></i></div>
+              <h3>Figma → production</h3>
+              <p>Daily design handoff — pixel-accurate components, responsive across mobile, tablet and desktop.</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-plug"></i></div>
+              <h3>API integrations</h3>
+              <p>Data API batch fetching, JWT SSO with external microservices, payment gateways (Tpay, Stripe).</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-translate"></i></div>
+              <h3>i18n at scale</h3>
+              <p>Full internationalisation with next-intl across 4 languages — pl/en/de/uk-UA — including SEO hreflang and locale routing.</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="bi bi-arrow-repeat"></i></div>
+              <h3>CI/CD & deploy</h3>
+              <p>GitHub Actions pipelines, Vercel staging and production deploy hooks, develop → staging → master release flow.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
+      <section id="work" class="section">
+        <div class="container">
+          <h2 class="section-title">Work & Projects</h2>
+          <p class="section-intro">
+            Production software — from enterprise platforms to self-funded SaaS with paying customers.
+          </p>
+          <div id="projects-grid" class="projects-grid"></div>
+        </div>
+      </section>
+
       <section id="skills" class="section section-alt">
         <div class="container">
           <h2 class="section-title">Technical Skills</h2>
           <p class="section-intro">
-            Full-stack developer with strong backend expertise. I work across 
-            the entire development stack with focus on API design, system 
-            architecture, and building reliable, maintainable applications.
+            Frontend-focused, with the backend depth to ship end-to-end features and integrate external services independently.
           </p>
-
           <div class="skills-grid">
-            <article class="skill-card">
-              <h3>Backend Development</h3>
+
+            <article class="skill-card skill-fe">
+              <div class="skill-card-header">
+                <span class="skill-icon"><i class="bi bi-window-stack"></i></span>
+                <h3>Frontend</h3>
+              </div>
               <ul class="skill-list">
-                <li><strong>Python · Django REST Framework · FastAPI</strong></li>
-                <li><strong>Database architecture</strong> (PostgreSQL, MongoDB, Redis)</li>
-                <li><strong>Task queues</strong> (Celery, django-celery-beat, async processing)</li>
-                <li><strong>RESTful API design</strong> (OpenAPI, validation, error handling)</li>
-                <li><strong>Authentication & permissions</strong> (JWT, OAuth 2.0, RBAC)</li>
-                <li><strong>Testing & quality</strong> (pytest, 70%+ test coverage)</li>
-                <li><strong>Integrations</strong> (Stripe, Tpay, payment systems, webhooks)</li>
-                <li><strong>Real-time systems</strong> (WebSocket, push notifications)</li>
+                <li><strong>Next.js 14</strong> — App Router, Server Components, Middleware, i18n routing</li>
+                <li><strong>React 18 + TypeScript</strong> — hooks, custom hooks, component architecture</li>
+                <li><strong>Tailwind CSS</strong> — responsive design, mobile-first, breakpoint debugging</li>
+                <li><strong>React Query</strong> — server state, infinite scroll, batch fetching, cache management</li>
+                <li><strong>Zustand</strong> — client state management</li>
+                <li><strong>NextAuth.js</strong> — JWT + OAuth 2.0, session-aware middleware routing</li>
+                <li><strong>React Hook Form + Yup</strong> — conditional validation, auth-aware forms</li>
+                <li><strong>next-intl</strong> — i18n in 4 languages (pl/en/de/uk-UA)</li>
+                <li><strong>Framer Motion</strong> — animations, modals, page transitions</li>
+                <li><strong>Figma → code</strong> — daily design-to-code workflow</li>
               </ul>
             </article>
 
-            <article class="skill-card">
-              <h3>Frontend Development</h3>
+            <article class="skill-card skill-be">
+              <div class="skill-card-header">
+                <span class="skill-icon"><i class="bi bi-server"></i></span>
+                <h3>Backend & Integrations</h3>
+              </div>
               <ul class="skill-list">
-                <li><strong>Next.js 14 (App Router, Server Components) · React 18 · TypeScript</strong></li>
-                <li><strong>Modern styling</strong> (Tailwind CSS, Material-UI, responsive design)</li>
-                <li><strong>State management</strong> (React Query, Zustand, Context API)</li>
-                <li><strong>Forms & validation</strong> (React Hook Form, Yup)</li>
-                <li><strong>Authentication</strong> (NextAuth.js, OAuth 2.0, JWT)</li>
-                <li><strong>Modern tooling</strong> (Vite, npm, ESNext, development workflows)</li>
-                <li><strong>Testing</strong> (Vitest, Jest, React Testing Library)</li>
-                <li><strong>Real-time features</strong> (WebSocket integration, live updates)</li>
+                <li><strong>Django 3.2 + DRF</strong> — REST APIs, serializers, permissions, throttling</li>
+                <li><strong>Python</strong> — async patterns, task queues, data processing</li>
+                <li><strong>PostgreSQL</strong> — relational data modelling, ORM queries</li>
+                <li><strong>Celery + Redis</strong> — distributed task queue, async emails, periodic tasks</li>
+                <li><strong>JWT SSO</strong> — microservice integration, token generation, TTL management</li>
+                <li><strong>Tpay API</strong> — cards, BLIK, bank transfers, product name mapping</li>
+                <li><strong>Stripe API</strong> — per-seat billing, webhooks, subscription management</li>
+                <li><strong>Django i18n</strong> — gettext, .po/.mo compilation, multilingual notifications</li>
+                <li><strong>Data API</strong> — batch fetching, cursor pagination, null-token deduplication fix</li>
+                <li><strong>pytest</strong> — unit and integration tests</li>
               </ul>
             </article>
 
-            <article class="skill-card">
-              <h3>DevOps & Infrastructure</h3>
+            <article class="skill-card skill-ops">
+              <div class="skill-card-header">
+                <span class="skill-icon"><i class="bi bi-terminal"></i></span>
+                <h3>Tooling & DevOps</h3>
+              </div>
               <ul class="skill-list">
-                <li><strong>Containerization</strong> (Docker, Docker Compose)</li>
-                <li><strong>CI/CD</strong> (GitHub Actions, automated testing & deployment)</li>
-                <li><strong>Infrastructure automation</strong> (Ansible, Nginx configuration)</li>
-                <li><strong>Cloud platforms</strong> (AWS, DigitalOcean, Heroku)</li>
-                <li><strong>Monitoring & logging</strong> (Sentry, Grafana)</li>
-                <li><strong>Version control</strong> (Git, GitHub, collaborative workflows)</li>
-                <li><strong>Development tools</strong> (VS Code, debugging, profiling)</li>
-                <li><strong>External services</strong> (Cloudinary, Google APIs, Klaviyo)</li>
+                <li><strong>GitHub Actions</strong> — CI/CD pipelines, ci.yml authoring, automated testing</li>
+                <li><strong>Vercel</strong> — staging and production deploy hooks, branch deployments</li>
+                <li><strong>Docker Compose</strong> — local dev environments, multi-service setup</li>
+                <li><strong>Jira</strong> — agile workflow, sprint planning, ticket tracking</li>
+                <li><strong>Git</strong> — conventional commits, PR templates, branch strategy</li>
+                <li><strong>Figma</strong> — component inspection, design token extraction, asset export</li>
+                <li><strong>Claude Code</strong> — AI-assisted development (certified)</li>
+                <li><strong>ESLint + Prettier</strong> — code quality, linting configuration</li>
+                <li><strong>Vitest / Jest</strong> — unit and component testing</li>
               </ul>
             </article>
+
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <div class="container footer-content">
         <div>
           <p class="footer-name">Łukasz Głowacz</p>
-          <p class="footer-tagline">
-            Full Stack Developer · Python · Next.js · Django · React · TypeScript · Available for B2B contracts
-          </p>
+          <p class="footer-tagline">Frontend Developer · Next.js · React · TypeScript · Remote B2B only</p>
         </div>
         <div class="footer-links">
-          <a href="mailto:contact@lukaszglowacz.com">Email</a>
-          <a href="tel:+46790332262">+46 790 332 262</a>
-          <a href="tel:+48690250957">+48 690 250 957</a>
-          <a
-            href="https://github.com/lukaszglowacz"
-            target="_blank"
-            rel="noreferrer"
-            >GitHub</a
-          >
-          <a
-            href="https://www.linkedin.com/in/lukas-glowacz/"
-            target="_blank"
-            rel="noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            href="assets/lukasz-glowacz-full-stack.pdf"
-            class="btn primary"
-            download
-          >
-            Download CV
-          </a>
+          <a href="mailto:contact@lukaszglowacz.com"><i class="bi bi-envelope"></i> contact@lukaszglowacz.com</a>
+          <a href="https://github.com/lukaszglowacz" target="_blank" rel="noreferrer"><i class="bi bi-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/lukasz-glowacz-dev/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="assets/lukasz-glowacz-software-developer.pdf" class="btn primary" download>Download CV</a>
         </div>
       </div>
     </footer>

@@ -1,192 +1,94 @@
-// Portfolio Projects - Data-driven approach
-// Currently featuring 5 real projects
-
 const projects = [
   {
-    name: "Sports Messenger",
-    role: "Full Stack Developer",
-    description:
-      "Real-time messaging application for sports teams built in 4 hours using AI-assisted development. Features comprehensive backend API with WebSocket support, complete test suite achieving 69% coverage, and modern React frontend with real-time communication.",
-    tech: [
-      "FastAPI",
-      "React 18",
-      "WebSocket",
-      "PostgreSQL",
-      "Pytest",
-      "TypeScript",
-      "Material-UI",
-      "SQLAlchemy"
-    ],
-    highlights:
-      "Built in 4 hours · 69% test coverage · Real-time messaging · AI-assisted development",
-    codeUrl: "https://github.com/lukaszglowacz/sports-messenger",
-    featured: true
-  },
-  {
     name: "Playmaker.pro",
-    role: "Full Stack Developer (Current Position)",
+    role: "Frontend Developer · Full Stack",
+    badge: "current",
     description:
-      "Enterprise sports management platform serving thousands of athletes, clubs, and officials. Building production features including transfer marketplace, payment integrations (Tpay), real-time notifications, and social features. Working with multi-database architecture (PostgreSQL, MongoDB, Redis) and distributed task processing with Celery.",
+      "Enterprise sports management platform serving thousands of athletes, clubs, scouts and officials across Poland. Primary focus on Next.js 14 frontend — built the complete public-facing marketing site, SEO infrastructure, Data API batch fetching for PM Score, JWT SSO integration with Asystent Trenera microservice, and premium purchase flow.",
     tech: [
-      "Next.js 14",
-      "React 18",
-      "Django 3.2",
-      "Django REST Framework",
-      "TypeScript",
-      "PostgreSQL",
-      "MongoDB",
-      "Redis",
-      "Celery",
-      "Tailwind CSS",
-      "React Query",
-      "Zustand",
-      "NextAuth.js",
-      "Docker Compose",
-      "Ansible",
-      "GitHub Actions"
+      "Next.js 14", "React 18", "TypeScript", "Tailwind CSS",
+      "React Query", "Zustand", "NextAuth.js", "next-intl",
+      "Django 3.2", "DRF", "PostgreSQL", "GitHub Actions", "Vercel"
     ],
     highlights:
-      "Production system · 70%+ test coverage · Multi-database architecture · Real-time features · Payment integration",
-    liveUrl: "https://playmaker.pro",
-    current: true
+      "Production · 4 languages (pl/en/de/uk-UA) · JWT SSO integration · CI/CD deploy hooks",
+    liveUrl: "https://playmaker.pro"
   },
   {
     name: "Gurudo Geo",
     role: "Founder & Full Stack Developer",
+    badge: "saas",
     description:
-      "Location-aware work time management system for field teams. Combines Django REST backend with React dashboard to track work sessions within 100m radius of workplaces, manage teams, and generate PDF reports with Stripe subscription billing.",
+      "Geolocation-based workforce management SaaS for Swedish construction companies. Built end-to-end: Django REST Framework backend with 100m radius geolocation validation, React + TypeScript dashboard, Stripe per-seat billing, automated PDF reports, Docker deployment on DigitalOcean. Launched with paying customers.",
     tech: [
-      "Django REST Framework",
-      "React + Vite",
-      "PostgreSQL",
-      "JWT auth",
-      "Stripe subscriptions",
-      "Klaviyo",
-      "Docker",
-      "DigitalOcean"
+      "Django REST Framework", "React", "TypeScript",
+      "PostgreSQL", "Stripe API", "Klaviyo",
+      "Docker", "DigitalOcean", "Google Maps API", "JWT"
     ],
-    highlights:
-      "Geolocation-based access · Per-seat billing · Real-time monitoring · PDF reports",
+    highlights: "Paying customers · Geolocation validation · Stripe billing · Full lifecycle ownership",
     liveUrl: "https://gurudo.se",
-    codeUrlFrontend:
-      "https://github.com/lukaszglowacz/gurudo-geo-frontend-public",
-    codeUrlBackend:
-      "https://github.com/lukaszglowacz/gurudo-geo-backend-public"
+    codeUrlFrontend: "https://github.com/lukaszglowacz/gurudo-geo-frontend-public",
+    codeUrlBackend: "https://github.com/lukaszglowacz/gurudo-geo-backend-public"
   },
   {
-    name: "Personal Expense Tracker",
-    role: "Python Developer",
-    description:
-      "Console-based expense tracking application using Google Sheets as a live database. Allows users to log expenses into 15 predefined categories, compare spending across months and years, and maintain structured financial records.",
-    tech: ["Python", "Google Sheets API", "Heroku", "Google Cloud"],
-    highlights:
-      "CLI interface · 15 expense categories · Google Sheets integration · Cloud deployment",
-    codeUrl: "https://github.com/lukaszglowacz/personal-expense-tracker"
-  },
-  {
-    name: "Norton Inspiration",
+    name: "Sports Messenger",
     role: "Full Stack Developer",
+    badge: "featured",
     description:
-      "Community-driven interior design platform where users share wall art projects, engage through comments and likes, and browse testimonials. Features responsive design, rich media handling, and complete user account management.",
-    tech: ["Django", "PostgreSQL", "Cloudinary", "Bootstrap", "Heroku"],
-    highlights:
-      "User accounts · Social features · Rich media · Responsive design",
-    codeUrl: "https://github.com/lukaszglowacz/norton-innovation-platform"
+      "Full-stack messaging application for athlete–official communication built in 4 hours as a technical recruitment project. React 18 + TypeScript + Material-UI frontend, FastAPI async backend, Zustand state management, role-based messaging limits, SQLAlchemy ORM, Pydantic validation, 28 automated tests, 69% coverage, Docker Compose deployment.",
+    tech: [
+      "FastAPI", "React 18", "TypeScript",
+      "Material-UI", "Zustand", "SQLAlchemy",
+      "Pydantic", "pytest", "Vitest", "Docker Compose"
+    ],
+    highlights: "Built in 4 hours · 28 tests · 69% coverage · Role-based limits",
+    codeUrl: "https://github.com/lukaszglowacz/sports-messenger"
   }
 ];
 
-// Render project cards
+const badgeConfig = {
+  current:  { label: "Current position", cls: "badge-current" },
+  featured: { label: "Recruitment project", cls: "badge-featured" },
+  saas:     { label: "SaaS · paying customers", cls: "badge-saas" }
+};
+
 const projectsGrid = document.getElementById("projects-grid");
 
 if (projectsGrid) {
-  projects.forEach((project) => {
+  projects.forEach((p) => {
     const card = document.createElement("article");
     card.className = "project-card";
-    
-    // Add special styling for featured/current projects
-    if (project.featured) {
-      card.classList.add("project-featured");
-    }
-    if (project.current) {
-      card.classList.add("project-current");
-    }
+    if (p.badge === "current")  card.classList.add("project-current");
+    if (p.badge === "featured") card.classList.add("project-featured");
 
-    // Title & role
-    const title = document.createElement("h3");
-    title.className = "project-name";
-    title.textContent = project.name;
+    const bc = badgeConfig[p.badge];
+    const badge = bc
+      ? `<span class="project-badge ${bc.cls}">${bc.label}</span>`
+      : "";
 
-    const role = document.createElement("p");
-    role.className = "project-role";
-    role.textContent = project.role;
+    const tags = p.tech
+      .map((t) => `<span class="tag">${t}</span>`)
+      .join("");
 
-    // Description
-    const desc = document.createElement("p");
-    desc.className = "project-description";
-    desc.textContent = project.description;
+    let links = "";
+    if (p.liveUrl)
+      links += `<a class="project-link" href="${p.liveUrl}" target="_blank" rel="noreferrer">Live site</a>`;
+    if (p.codeUrlFrontend)
+      links += `<a class="project-link" href="${p.codeUrlFrontend}" target="_blank" rel="noreferrer">GitHub — Frontend</a>`;
+    if (p.codeUrlBackend)
+      links += `<a class="project-link" href="${p.codeUrlBackend}" target="_blank" rel="noreferrer">GitHub — Backend</a>`;
+    if (!p.codeUrlFrontend && p.codeUrl)
+      links += `<a class="project-link" href="${p.codeUrl}" target="_blank" rel="noreferrer">GitHub repository</a>`;
 
-    // Tech tags
-    const tagsWrapper = document.createElement("div");
-    tagsWrapper.className = "project-tags";
-    project.tech.forEach((tagText) => {
-      const tag = document.createElement("span");
-      tag.className = "tag";
-      tag.textContent = tagText;
-      tagsWrapper.appendChild(tag);
-    });
-
-    // Highlights line
-    const meta = document.createElement("p");
-    meta.className = "project-meta";
-    meta.textContent = project.highlights;
-
-    // Links
-    const linksWrapper = document.createElement("div");
-    linksWrapper.className = "project-links";
-
-    if (project.liveUrl) {
-      const liveLink = document.createElement("a");
-      liveLink.className = "project-link";
-      liveLink.href = project.liveUrl;
-      liveLink.target = "_blank";
-      liveLink.rel = "noreferrer";
-      liveLink.textContent = "Live demo";
-      linksWrapper.appendChild(liveLink);
-    }
-
-    if (project.codeUrlFrontend && project.codeUrlBackend) {
-      const feLink = document.createElement("a");
-      feLink.className = "project-link";
-      feLink.href = project.codeUrlFrontend;
-      feLink.target = "_blank";
-      feLink.rel = "noreferrer";
-      feLink.textContent = "GitHub – Frontend";
-
-      const beLink = document.createElement("a");
-      beLink.className = "project-link";
-      beLink.href = project.codeUrlBackend;
-      beLink.target = "_blank";
-      beLink.rel = "noreferrer";
-      beLink.textContent = "GitHub – Backend";
-
-      linksWrapper.appendChild(feLink);
-      linksWrapper.appendChild(beLink);
-    } else if (project.codeUrl) {
-      const codeLink = document.createElement("a");
-      codeLink.className = "project-link";
-      codeLink.href = project.codeUrl;
-      codeLink.target = "_blank";
-      codeLink.rel = "noreferrer";
-      codeLink.textContent = "GitHub repository";
-      linksWrapper.appendChild(codeLink);
-    }
-
-    card.appendChild(title);
-    card.appendChild(role);
-    card.appendChild(desc);
-    card.appendChild(tagsWrapper);
-    card.appendChild(meta);
-    card.appendChild(linksWrapper);
+    card.innerHTML = `
+      ${badge}
+      <h3 class="project-name">${p.name}</h3>
+      <p class="project-role">${p.role}</p>
+      <p class="project-description">${p.description}</p>
+      <div class="project-tags">${tags}</div>
+      <p class="project-meta">${p.highlights}</p>
+      <div class="project-links">${links}</div>
+    `;
 
     projectsGrid.appendChild(card);
   });
